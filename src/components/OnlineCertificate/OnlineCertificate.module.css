@@ -1,0 +1,35 @@
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.mediaBody {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.online {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.onlineInner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textInner{
+    font-size: .75rem !important;
+    font-weight: bold;
+}
+
+.date {
+    display: block;
+    text-transform: uppercase;
+    color: #6c757d;
+    font-weight: bold;
+}

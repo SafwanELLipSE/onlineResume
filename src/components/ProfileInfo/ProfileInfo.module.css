@@ -1,0 +1,10 @@
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.mediaBody {
+    -ms-flex: 1;
+    flex: 1;
+}

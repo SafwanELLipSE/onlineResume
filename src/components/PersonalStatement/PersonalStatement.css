@@ -1,0 +1,16 @@
+.carouselStyles .carousel-indicators {
+    margin: 0 !important;
+}
+
+.carouselStyles .carousel-indicators button {
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+.carouselStyles .carousel-indicators .active {
+    background-color: #87C540;
+}
+
+.personal-card-text-justify{
+    text-align: justify;
+}
