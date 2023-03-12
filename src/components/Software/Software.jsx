@@ -80,12 +80,12 @@ const Software = () => {
             <Card className='mb-3'>
                 <Card.Header>
                     <h1 className='text-center'> 
-                        <FontAwesomeIcon icon={faLaptop} className={`text-primary me-2`}/> Language Skills 
+                        <FontAwesomeIcon icon={faLaptop} className={`text-primary me-2`}/> Software Skills 
                     </h1>
                 </Card.Header>
                 <Card.Body>
                     <div className="mb-3">
-                        <h3 className="h5 mb-3">{softwareIcon} Coding Languages</h3>
+                        <h3 className="h5 mb-3">{softwareIcon} Software </h3>
                         {softwareList.slice(0, 2).map((data, index) => (
                             <div key={index}>
                                 <h4 className="h6 text-muted">

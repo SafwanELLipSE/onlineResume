@@ -22,7 +22,7 @@ const Language = () => {
     const languageList = [
         {
             type: "Bangla (Mother Tongue)",
-            progress: "50"
+            progress: "100"
         },
         {
             type: "English",

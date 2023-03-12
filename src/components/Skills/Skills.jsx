@@ -8,7 +8,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 
 // fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGears, faCode, faDatabase, faC, faUsers, faSatelliteDish, faPersonCircleQuestion, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
+import { faGears, faCode, faDatabase, faC, faUsers, faSatelliteDish, faPersonCircleQuestion, faEarthAmericas, faPeopleGroup, faUsersGear } from '@fortawesome/free-solid-svg-icons';
 import { faJava, faHtml5, faCss3Alt, faJs, faPhp, faBootstrap, faLaravel, faReact } from '@fortawesome/free-brands-svg-icons';
 
 // styles
@@ -21,6 +21,10 @@ const Skills = () => {
         <FontAwesomeIcon icon={faCode} className={`text-muted me-2`}/>
     );
 
+    const userIcon = (
+        <FontAwesomeIcon icon={faUsersGear} className={`text-muted me-2`}/>
+    );
+    
     const earthAmericas = (
         <FontAwesomeIcon icon={faEarthAmericas} className={`text-muted me-2`}/>
     );
@@ -65,7 +69,11 @@ const Skills = () => {
             name: "C++",
             progress: "50",
             icon: faC
-        },
+        }
+        
+    ];
+
+    const interpersonalList = [
         {
             name: "People Skills",
             progress: "75",
@@ -78,9 +86,17 @@ const Skills = () => {
         },
         {
             name: "Innovative Thinking",
-            progress: "50",
+            progress: "75",
             icon: faPersonCircleQuestion
         },
+        {
+            name: "Teamwork",
+            progress: "50",
+            icon: faPeopleGroup
+        },
+    ];
+
+    const librariesList = [
         {
             name: "Laravel",
             progress: "75",
@@ -114,11 +130,12 @@ const Skills = () => {
         <div>
             <Card className='mb-3'>
                 <Card.Header>
-                    <h1 className='text-center'> <FontAwesomeIcon icon={faGears} className={`text-primary me-2`}/> Language Skills </h1>
+                    <h1 className='text-center'> <FontAwesomeIcon icon={faGears} className={`text-primary me-2`}/> Skills </h1>
                 </Card.Header>
                 <Card.Body>
                     <div className="mb-3">
-                        <h3 className="h5 mb-3">{skillIcon} Coding Languages</h3>
+                        {/* Programming Skills */}
+                        <h3 className="h5 mb-3">{skillIcon} Programming Skills</h3>
                         {skillList.slice(0, 2).map((data, index) => (
                             <div key={index}>
                                 <h4 className="h6 text-muted">
@@ -132,7 +149,19 @@ const Skills = () => {
                         ))}
                         <Collapse in={open}>
                             <div id="collapse-language">
-                            {skillList.slice(2, 11).map((data, index) => (
+                            {skillList.slice(2, 8).map((data, index) => (
+                                <div key={index}>
+                                    <h4 className="h6 text-muted">
+                                        <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/> 
+                                        {data.name}
+                                    </h4>
+                                    <ProgressBar className='mb-3'>
+                                        <ProgressBar striped animated variant="primary" now={data.progress} label={`${data.progress}%`} />
+                                    </ProgressBar>
+                                </div>
+                            ))}
+                            <h3 className="h5 mb-3">{userIcon} Interpersonal Skills</h3>
+                            {interpersonalList.map((data, index) => (
                                 <div key={index}>
                                     <h4 className="h6 text-muted">
                                         <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/> 
@@ -144,7 +173,7 @@ const Skills = () => {
                                 </div>
                             ))}
                             <h3 className="h5 mb-3">{earthAmericas} Framework & Library</h3>
-                            {skillList.slice(11, 16).map((data, index) => (
+                            {librariesList.map((data, index) => (
                                 <div key={index}>
                                     <h4 className="h6 text-muted">
                                         <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/>
