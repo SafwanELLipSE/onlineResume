@@ -93,7 +93,7 @@ const Software = () => {
                                     {data.name}
                                 </h4>
                                 <ProgressBar className='mb-3'>
-                                    <ProgressBar striped variant="info" now={data.progress} label={`${data.progress}%`} />
+                                    <ProgressBar striped animated variant="info" now={data.progress} label={`${data.progress}%`} />
                                 </ProgressBar>
                             </div>
                         ))}
@@ -107,7 +107,7 @@ const Software = () => {
                                             {data.name}
                                         </h4>
                                         <ProgressBar className='mb-3'>
-                                            <ProgressBar striped variant="info" now={data.progress} label={`${data.progress}%`} />
+                                            <ProgressBar striped animated  variant="info" now={data.progress} label={`${data.progress}%`} />
                                         </ProgressBar>
                                     </div>
                                 ))}

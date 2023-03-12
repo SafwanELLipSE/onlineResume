@@ -126,7 +126,7 @@ const Skills = () => {
                                     {data.name}
                                 </h4>
                                 <ProgressBar className='mb-3'>
-                                    <ProgressBar striped variant="primary" now={data.progress} label={`${data.progress}%`} />
+                                    <ProgressBar striped animated variant="primary" now={data.progress} label={`${data.progress}%`} />
                                 </ProgressBar>
                             </div>
                         ))}
@@ -139,7 +139,7 @@ const Skills = () => {
                                         {data.name}
                                     </h4>
                                     <ProgressBar className='mb-3'>
-                                        <ProgressBar striped variant="primary" now={data.progress} label={`${data.progress}%`} />
+                                        <ProgressBar striped animated variant="primary" now={data.progress} label={`${data.progress}%`} />
                                     </ProgressBar>
                                 </div>
                             ))}
@@ -151,7 +151,7 @@ const Skills = () => {
                                         {data.name}
                                     </h4>
                                     <ProgressBar className='mb-3'>
-                                        <ProgressBar striped variant="primary" now={data.progress} label={`${data.progress}%`} />
+                                        <ProgressBar striped animated variant="primary" now={data.progress} label={`${data.progress}%`} />
                                     </ProgressBar>
                                 </div>
                             ))}

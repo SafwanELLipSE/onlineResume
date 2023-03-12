@@ -45,7 +45,7 @@ const Language = () => {
                             <div key={index}>
                                 <h4 className="h6 text-muted">{languageIcon} {data.type}</h4>
                                 <ProgressBar className='mb-3'>
-                                    <ProgressBar striped variant="success" now={data.progress} label={`${data.progress}%`} />
+                                    <ProgressBar striped animated variant="success" now={data.progress} label={`${data.progress}%`} />
                                 </ProgressBar>
                             </div>
                         ))}
@@ -55,7 +55,7 @@ const Language = () => {
                                 <div key={index}>
                                     <h4 className="h6 text-muted">{languageIcon} {data.type}</h4>
                                     <ProgressBar className='mb-3'>
-                                        <ProgressBar striped variant="success" now={data.progress} label={`${data.progress}%`} />
+                                        <ProgressBar striped animated variant="success" now={data.progress} label={`${data.progress}%`} />
                                     </ProgressBar>
                                 </div>
                             ))}
