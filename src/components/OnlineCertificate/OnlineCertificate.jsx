@@ -25,9 +25,36 @@ export default function OnlineCertificates() {
 
   const certificates = [
     {
+        name: "SQL (Intermediate)",
+        from: "HackerRank",
+        link: "https://drive.google.com/file/d/1YoRsvbg5ONsyG6nHM7k0mFRDiKrOu_WC/view?usp=sharing",
+        type: "Certificate",
+        date: "12 / 03 / 2023",
+        dateTime: "2023-03-12",
+        icon: certificateIcon
+    },
+    {
+        name: "SQL (Basic)",
+        from: "HackerRank",
+        link: "https://drive.google.com/file/d/10RQgMFtz0gZhxnOlD9I2HvoSNCFdKUed/view?usp=sharing",
+        type: "Certificate",
+        date: "11 / 02 / 2023",
+        dateTime: "2023-03-11",
+        icon: certificateIcon
+    },
+    {
+        name: "Tableau 2022 A-Z Hands-On Tableau Training for Data Science",
+        from: "Udemy",
+        link: "https://drive.google.com/file/d/1x_Xbvi5vFDbSOBG_mkW3WxWkVYktIFM4/view?usp=sharing",
+        type: "Certificate",
+        date: "23 / 02 / 2023",
+        dateTime: "2023-02-23",
+        icon: certificateIcon
+    },
+    {
         name: "Door Supervisors (Level 2)",
-        from: "Highfield International",
-        link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
+        from: "Highfield",
+        link: "https://drive.google.com/file/d/1M-PIfFsqawAo4AO7lRXdmMzkSv9Tn-V-/view?usp=sharing",
         type: "Certificate",
         date: "31 / 01 / 2023",
         dateTime: "2023-01-31",
@@ -35,26 +62,53 @@ export default function OnlineCertificates() {
     },
     {
         name: "First Aid (Level 3)",
-        from: "Highfield International",
-        link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
+        from: "Lilly Angel",
+        link: "",
         type: "Certificate",
         date: "31 / 01 / 2023",
         dateTime: "2023-01-31",
         icon: certificateIcon
     },
     {
-        name: "Sandwich Artistry",
-        from: "Subway",
-        link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
+        name: "Intermediate SQL",
+        from: "datacamp",
+        link: "https://drive.google.com/file/d/1WQtJjwB6szDZwdoCZfbbbN_8iLXG_0mR/view?usp=sharing",
+        type: "Accomplishment",
+        date: "13 / 11 / 2022",
+        dateTime: "2022-11-13",
+        icon: starIcon
+    },
+    {
+        name: "Introduction to SQL",
+        from: "datacamp",
+        link: "https://drive.google.com/file/d/17TfEeb8FvhIUp-kVrZjSmAB3u91-MutD/view?usp=sharing",
+        type: "Accomplishment",
+        date: "27 / 10 / 2022",
+        dateTime: "2022-10-27",
+        icon: starIcon
+    },
+    {
+        name: "Introduction to Python",
+        from: "datacamp",
+        link: "https://drive.google.com/file/d/1oB6mPYLh1l0b6zhRu8W_tYJoANvT86cI/view?usp=sharing",
+        type: "Accomplishment",
+        date: "26 / 10 / 2022",
+        dateTime: "2022-10-26",
+        icon: starIcon
+    },
+    {
+        name: "Project Management Fundamentals",
+        from: "ITonlineLearning",
+        link: "https://drive.google.com/file/d/1sbtLp2cpMx8Br2WHRHHB_fBy0DOa2EFe/view?usp=sharing",
         type: "Certificate",
-        date: "11 / 09 / 2022",
-        dateTime: "2022-09-11",
+        date: "10 / 09 / 2022",
+        dateTime: "2022-09-10",
         icon: certificateIcon
     },
     {
         name: "Sandwich Artistry 2",
         from: "Subway",
-        link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
+        link: "https://drive.google.com/file/d/19jQcfDzhySH8126ni8gkiSEKKYRlDNAB/view?usp=sharing",
         type: "Certificate",
         date: "23 / 09 / 2022",
         dateTime: "2022-09-23",
@@ -63,47 +117,20 @@ export default function OnlineCertificates() {
     {
         name: "Food Safety – Allergens",
         from: "Subway",
-        link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
+        link: "https://drive.google.com/file/d/1puRJnUt3ZWaqUFlIauVMa5YHM9ayjZba/view?usp=sharing",
         type: "Certificate",
         date: "23 / 09 / 2022",
         dateTime: "2022-09-23",
         icon: certificateIcon
     },
     {
-        name: "Project Management Fundamentals",
-        from: "ITonlineLearning",
-        link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
+        name: "Sandwich Artistry",
+        from: "Subway",
+        link: "https://drive.google.com/file/d/1wSgnJgMhfMXwxd1mKyMGopdp4TK77nlF/view?usp=sharing",
         type: "Certificate",
-        date: "10 / 09 / 2022",
-        dateTime: "2022-09-10",
+        date: "11 / 09 / 2022",
+        dateTime: "2022-09-11",
         icon: certificateIcon
-    },
-    {
-        name: "Introduction to Python",
-        from: "datacamp",
-        link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
-        type: "Accomplishment",
-        date: "26 / 10 / 2022",
-        dateTime: "2022-10-26",
-        icon: starIcon
-    },
-    {
-        name: "Introduction to SQL",
-        from: "datacamp",
-        link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
-        type: "Accomplishment",
-        date: "27 / 10 / 2022",
-        dateTime: "2022-10-27",
-        icon: starIcon
-    },
-    {
-        name: "Intermediate SQL",
-        from: "datacamp",
-        link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
-        type: "Accomplishment",
-        date: "13 / 11 / 2022",
-        dateTime: "2022-11-13",
-        icon: starIcon
     }
   ];
 
@@ -139,7 +166,7 @@ export default function OnlineCertificates() {
 
           <Collapse in={open}>
             <div id="collapse-certification">
-              {certificates.slice(2, 10).map((data, index) => (
+              {certificates.slice(2, 12).map((data, index) => (
                   <div key={index}>
                       <div className={`${styles.media} mb-2`}>
                           {data.icon}

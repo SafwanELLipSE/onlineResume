@@ -25,6 +25,13 @@ export default function Main() {
         <div>
             <div className='container-md mt-4'>
                 <Row className='mt-3'>
+                    <Col lg={4} md={4} sm={12}>
+                        <ProfileImage />
+                        <ProfileInfo />
+                        <Language />
+                        <Skills />
+                        <Software />
+                    </Col>
                     <Col lg={8} md={8} sm={12}>
                         <PersonalStatement />
                         <WorkExperience />
@@ -34,13 +41,6 @@ export default function Main() {
                         <AdditionalActivities />
                         <Awards />
                         <Workshops />
-                    </Col>
-                    <Col lg={4} md={4} sm={12}>
-                        <ProfileImage />
-                        <ProfileInfo />
-                        <Language />
-                        <Skills />
-                        <Software />
                     </Col>
                 </Row>
             </div>
