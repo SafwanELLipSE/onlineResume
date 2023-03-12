@@ -8,7 +8,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 
 // fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleUser, faPerson, faCalendarDays, faBook, faEyeDropper, faIdCard, faMosque, faRing, faAt, faSquarePhone, faAddressCard, faHouse, faAddressBook, faHouseChimney } from '@fortawesome/free-solid-svg-icons';
+import { faCircleUser, faPerson, faCalendarDays, faBook, faEyeDropper, faIdCard, faMosque, faRing, faAt, faSquarePhone, faAddressCard, faHouse, faAddressBook, faHouseChimney, faMars } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faLinkedin, faFacebookSquare, faGithub  } from '@fortawesome/free-brands-svg-icons';
 
 // styles
@@ -68,6 +68,7 @@ const ProfileInfo = () => {
                         </div>
                         <ul className={`${styles.mediaBody} list-unstyled mt-3`}>
                             <li><FontAwesomeIcon icon={faEyeDropper} className={`text-muted`} /> Blood Group: A (+)</li>
+                            <li><FontAwesomeIcon icon={faMars} className={`text-muted`} /> Gender: Male</li>
                             <li><FontAwesomeIcon icon={faIdCard} className={`text-muted`} /> Nationality: Bangladeshi</li>
                             <li><FontAwesomeIcon icon={faMosque} className={`text-muted`} /> Religion: Islam</li>
                             <li><FontAwesomeIcon icon={faRing} className={`text-muted`} /> Married Status: single</li>
