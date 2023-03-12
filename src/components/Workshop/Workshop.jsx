@@ -106,7 +106,7 @@ export default function Workshops() {
     <div>
       <Card className='mb-3'>
         <Card.Header>
-          <h1 className='text-center'> Awards </h1>
+          <h1 className='text-center'> Workshops </h1>
         </Card.Header>
         <Card.Body>
           {workshops.slice(0, 2).map((data, index) => (

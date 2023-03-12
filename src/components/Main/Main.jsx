@@ -18,6 +18,7 @@ import OnlineCertificates from '../OnlineCertificate/OnlineCertificate';
 // Bootstraps
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Hobby from '../Hobby/Hobby';
 
 
 export default function Main() {
@@ -28,9 +29,10 @@ export default function Main() {
                     <Col lg={4} md={4} sm={12}>
                         <ProfileImage />
                         <ProfileInfo />
-                        <Language />
                         <Skills />
                         <Software />
+                        <Hobby/>
+                        <Language />
                     </Col>
                     <Col lg={8} md={8} sm={12}>
                         <PersonalStatement />
