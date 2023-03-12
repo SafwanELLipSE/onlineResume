@@ -2,8 +2,6 @@ import React from 'react';
 
 // Bootstraps 5
 import Card from 'react-bootstrap/Card';
-import Collapse from 'react-bootstrap/Collapse';
-import Button from 'react-bootstrap/Button';
 
 // fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
