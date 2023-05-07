@@ -25,6 +25,15 @@ export default function OnlineCertificates() {
 
   const certificates = [
     {
+      name: "Tableau 2022 Advanced: Master Tableau in Data Science",
+      from: "Udemy",
+      link: "https://drive.google.com/file/d/1ijD6C-bMKViO-Ap4AfkTpPQ54ersZp2G/view?usp=sharing",
+      type: "Certificate",
+      date: "18 / 03 / 2023",
+      dateTime: "2023-03-18",
+      icon: certificateIcon
+    },
+    {
         name: "SQL (Intermediate)",
         from: "HackerRank",
         link: "https://drive.google.com/file/d/1YoRsvbg5ONsyG6nHM7k0mFRDiKrOu_WC/view?usp=sharing",

@@ -23,7 +23,45 @@ const WorkExperience = () => {
 
     const education = [
         {
-            job: "Team Member",
+            job: "Admissions Officer (Part-Time)",
+            company: "Elizabeth School of London",
+            location: "Canary Wharf, London, United Kingdom",
+            link: "https://elizabethschool.com/",
+            startDate: "01 / 04 / 2023",
+            endDate: "Present",
+            dateTimeStart: "2023-04-01",
+            dateTimeEnd: "Present",
+            icon: briefCase,
+            responsibilities: [
+                "Analyse files and address inconsistencies as soon as possible.", 
+                "Ensure that all agency and student inquiries are handled professionally and expeditiously.",
+                "Implement and maintain systems and processes to guarantee that all databases include correct and thorough information.", 
+                "Checks products in the sandwich unit area and restocks items to ensure a sufficient supply throughout the shift.",
+                "To protect student privacy, ensure that correct releases are on file."                           
+            ]
+        },
+        {
+            job: "Team Member (Part-Time)",
+            company: "Subway",
+            location: "Surbiton Rd, Kingston upon Thames, London, United Kingdom",
+            link: "https://www.subway.com/en-GB",
+            startDate: "24 / 02 / 2023",
+            endDate: "31 / 03 / 2023",
+            dateTimeStart: "2023-02-24",
+            dateTimeEnd: "2023-03-31",
+            icon: briefCase,
+            responsibilities: [
+                "Maintains excellent standards of food preparation while working in a fast-paced setting.", 
+                "Prepares food ingredients by washing, cutting, slicing, chopping, and grating them.",
+                "Prepare meal orders neatly according to customer requests.", 
+                "Always keeps a clean and ordered workspace.",
+                "Sanitises all utensils and dishes thoroughly before each use.",
+                "Follows all food safety guidelines when storing, preparing, and serving food.",  
+                "Handling cash and credit card transactions."                            
+            ]
+        },
+        {
+            job: "Team Member (Part-Time)",
             company: "Subway",
             location: "Stratford the Mall, London, United Kingdom",
             link: "https://www.subway.com/en-GB",
@@ -124,7 +162,7 @@ const WorkExperience = () => {
                     ))}
                     <Collapse in={open}>
                         <div id="collapse-work-experience">
-                            {education.slice(1, 3).map((data, index) => (
+                            {education.slice(1, 5).map((data, index) => (
                                 <div key={index}>
                                     <div className={`${styles.media} mb-2`}>
                                         {briefCase}
