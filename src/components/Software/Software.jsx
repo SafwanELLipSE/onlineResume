@@ -8,8 +8,8 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 
 // fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faCode, faLaptop, faGear, faFileWord, faFileExcel, faFilePowerpoint, faBrain, faKeyboard, faChartGantt  } from '@fortawesome/free-solid-svg-icons';
-import { faAndroid } from '@fortawesome/free-brands-svg-icons';
+import { faLaptopCode, faCode, faLaptop, faGear, faFileWord, faFileExcel, faFilePowerpoint, faBrain, faKeyboard, faChartGantt, faTerminal } from '@fortawesome/free-solid-svg-icons';
+import { faAndroid, faTrello, faConfluence } from '@fortawesome/free-brands-svg-icons';
 
 // styles
 import styles from "./Software.module.css";
@@ -68,8 +68,23 @@ const Software = () => {
         },
         {
             name: "tableau",
-            progress: "50",
+            progress: "75",
             icon: faChartGantt
+        },
+        {
+            name: "Postman",
+            progress: "50",
+            icon: faTerminal
+        },
+        {
+            name: "Confluence",
+            progress: "50",
+            icon: faConfluence
+        },
+        {
+            name: "Trello",
+            progress: "50",
+            icon: faTrello
         }
     ];
 
@@ -100,7 +115,7 @@ const Software = () => {
 
                         <Collapse in={open}>
                             <div id="collapse-software">
-                                {softwareList.slice(2, 10).map((data, index) => (
+                                {softwareList.slice(2, 13).map((data, index) => (
                                     <div key={index}>
                                         <h4 className="h6 text-muted">
                                             <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/> 

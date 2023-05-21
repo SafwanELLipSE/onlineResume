@@ -10,8 +10,8 @@ const PersonalStatement = () => {
 
     const data = {
         name: 'K. M. Safwan Hassan',
-        header: 'Web Designer and Developer in front end and back end development. Well-versed in numerous programming languages including HTML5, PHP OOP, JavaScript, CSS, MySQL. I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. To make use of my interpersonal skills to achieve goals of a company that focuses on customer satisfaction and customer experience.',
-        second: 'I am interested in learning new skills. Hard-working individual with proficiency in HTML, JavaScript, and CSS, as well as ability to communicate effectively in a team setting, and possessing a strong willingness to learn.',
+        header: `I have a tremendous desire to design dynamic and visually appealing websites. I am committed to assisting businesses in establishing a strong online presence, and I have a solid foundation in web development technologies and a passion for creating outstanding user experiences. I was searching for a suitable developer position with an ambitious and exciting organization where my abilities will be put to good use while giving me the opportunity to develop professionally.`,
+        second: `I've spent my career honing my abilities in HTML, CSS, JavaScript, and numerous frontend frameworks, allowing me to create responsive and user-friendly websites. I am skilled in translating creative thoughts into usable websites that provide seamless navigation and excellent performance across several devices and browsers. I have important information on the development of web applications utilizing Laravel and React Js. I have a variety of knowledge and a strong desire to create high-quality web apps. I'm obsessed with staying up to speed on the latest web technologies and always improving my abilities.`,
         blockquote:[
             {
                 text: 'Anyone who has never made a mistake has never tried anything new.',
