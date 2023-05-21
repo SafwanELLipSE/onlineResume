@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faGuitar, faMusic, faGamepad, faCat, faBug, faChess, faFilm, faBook, faTicket } from '@fortawesome/free-solid-svg-icons';
 import { faReadme } from '@fortawesome/free-brands-svg-icons';
+
 // React Icon
 import { GiMeditation } from "react-icons/gi";
 
