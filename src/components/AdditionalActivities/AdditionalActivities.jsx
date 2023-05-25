@@ -36,7 +36,9 @@ export default function AdditionalActivities() {
     <div>
       <Card className='mb-3'>
         <Card.Header>
-          <h1 className='text-center'> Additional Activities </h1>
+          <h1 className={`text-center ${styles.cardHeaderText}`}> 
+            Additional Activities 
+          </h1>
         </Card.Header>
         <Card.Body>
           {activities.slice(0, 1).map((data, index) => (

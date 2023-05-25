@@ -1,3 +1,7 @@
+.cardHeaderText{
+    font-size: 2.5rem;
+}
+
 .media {
     display: -ms-flexbox;
     display: flex;
@@ -32,4 +36,28 @@
     text-transform: uppercase;
     color: #6c757d;
     font-weight: bold;
+}
+
+@media (max-width: 1025px){
+    .cardHeaderText{
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 769px){
+    .cardHeaderText{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 426px) {
+    .cardHeaderText{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .cardHeaderText{
+        font-size: 1.5rem;
+    }
 }

@@ -46,7 +46,9 @@ export default function Awards() {
     <div>
       <Card className='mb-3'>
         <Card.Header>
-          <h1 className='text-center'> Awards </h1>
+          <h1 className={`text-center ${styles.cardHeaderText}`}> 
+            Awards 
+          </h1>
         </Card.Header>
         <Card.Body>
           {awards.slice(0, 1).map((data, index) => (

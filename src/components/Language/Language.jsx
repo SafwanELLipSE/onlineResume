@@ -36,7 +36,9 @@ const Language = () => {
         <div>
             <Card className='mb-3'>
                 <Card.Header>
-                    <h1 className='text-center'> <FontAwesomeIcon icon={faLanguage} className={`text-primary me-2`}/> Language Skills </h1>
+                    <h1 className={`text-center ${styles.cardHeaderText}`}> 
+                        <FontAwesomeIcon icon={faLanguage} className={`text-primary me-2`}/> Language Skills 
+                    </h1>
                 </Card.Header>
                 <Card.Body>
                     <div className="mb-3">
