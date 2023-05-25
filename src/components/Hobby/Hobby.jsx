@@ -15,25 +15,61 @@ import { GiMeditation } from "react-icons/gi";
 import styles from "./Hobby.module.css";
 
 const Hobby = () => {
+    const hobbies = [
+        {
+            text: "Songs and Music",
+            icon: faMusic
+        },
+        {
+            text: "Gamer",
+            icon: faGamepad
+        },
+        {
+            text: "Loves Cat",
+            icon: faCat
+        },
+        {
+            text: "Loves Coding",
+            icon: faBug
+        },
+        {
+            text: "Chess",
+            icon: faChess
+        },
+        {
+            text: "Movies and Series",
+            icon: faTicket
+        },
+        {
+            text: "Read History and Science Books",
+            icon: faBook
+        },
+        {
+            text: "Read Manga and Comic",
+            icon: faReadme
+        },
+        {
+            text: "Love Anime (Otaku)",
+            icon: faFilm
+        }
+    ]
     return (
         <div>
             <Card className='mb-3'>
                 <Card.Header>
-                    <h1 className='text-center'> <FontAwesomeIcon icon={faGuitar} className={`text-primary me-2`}/> Hobbies </h1>
+                    <h1 className={`text-center ${styles.cardHeaderText}`}> 
+                        <FontAwesomeIcon icon={faGuitar} className={`text-primary me-2`}/> Hobbies 
+                    </h1>
                 </Card.Header>
                 <Card.Body>
                     <div className={`${styles.media} mb-1`}>
                         <ul className={`${styles.mediaBody} list-unstyled mt-3`}>
-                            <li><FontAwesomeIcon icon={faMusic} className={`text-muted ms-5`} /> Songs and Music</li>
-                            <li><FontAwesomeIcon icon={faGamepad} className={`text-muted ms-5`} /> Gamer</li>
-                            <li><FontAwesomeIcon icon={faCat} className={`text-muted ms-5`} /> Loves Cat</li>
-                            <li><GiMeditation className={`text-muted ms-5`} /> Meditation</li>
-                            <li><FontAwesomeIcon icon={faBug} className={`text-muted ms-5`} /> Loves Coding</li>
-                            <li><FontAwesomeIcon icon={faChess} className={`text-muted ms-5`} /> Chess</li>
-                            <li><FontAwesomeIcon icon={faTicket} className={`text-muted ms-5`} /> Movies and Series</li>
-                            <li><FontAwesomeIcon icon={faBook} className={`text-muted ms-5`} /> Read History and Science Books</li>
-                            <li><FontAwesomeIcon icon={faReadme} className={`text-muted ms-5`} /> Read Manga and Comic</li>
-                            <li><FontAwesomeIcon icon={faFilm} className={`text-muted ms-5`} /> Love Anime (Otaku)</li>
+                            {hobbies.map((data, index) => (
+                                <li key={index}>
+                                    <FontAwesomeIcon icon={data.icon} className={`text-muted ${styles.iconLeftSpacing}`} /> {data.text}
+                                </li>
+                            ))}
+                            <li><GiMeditation className={`text-muted ${styles.iconLeftSpacing}`} /> Meditation</li>
                         </ul>
                     </div>
                 </Card.Body>
