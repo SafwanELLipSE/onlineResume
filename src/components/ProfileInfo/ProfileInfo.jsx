@@ -41,11 +41,13 @@ const ProfileInfo = () => {
         <div>
             <Card className='mb-3'>
                 <Card.Header>
-                    <h1 className='text-center'> <FontAwesomeIcon icon={faCircleUser} className={`text-primary me-2`}/> Personal Info </h1>
+                    <h1 className={`text-center ${styles.cardHeaderText}`}> 
+                        <FontAwesomeIcon icon={faCircleUser} className={`text-primary me-2`}/> Personal Info 
+                    </h1>
                 </Card.Header>
                 <Card.Body>
                     <div className={`${styles.media} mb-2`}>
-                        <div className='fa-fw fa-2x me-3'>
+                        <div className={`${styles.fontAwesomeSize} fa-fw me-3`}>
                             <FontAwesomeIcon icon={faPerson} className={`text-primary`}/>
                         </div>
                         <div className={`${styles.mediaBody} text-center mt-3`}>
@@ -54,7 +56,7 @@ const ProfileInfo = () => {
                         </div>
                     </div>
                     <div className={`${styles.media} mb-2`}>
-                        <div className='fa-fw fa-2x me-3'>
+                        <div className={`${styles.fontAwesomeSize} fa-fw me-3`}>
                             <FontAwesomeIcon icon={faCalendarDays} className={`text-primary`}/>
                         </div>
                         <div className={`${styles.mediaBody} text-center mt-3`}>
@@ -63,7 +65,7 @@ const ProfileInfo = () => {
                         </div>
                     </div>
                     <div className={`${styles.media} mb-2`}>
-                        <div className='fa-fw fa-2x me-3'>
+                        <div className={`${styles.fontAwesomeSize} fa-fw me-3`}>
                             <FontAwesomeIcon icon={faUserTie} className={`text-primary`}/>
                         </div>
                         <ul className={`${styles.mediaBody} list-unstyled mt-3`}>
@@ -81,7 +83,7 @@ const ProfileInfo = () => {
                     <Collapse in={open}>
                         <div id="collapse-profileInfo">
                             <div className={`${styles.media} mb-2`}>
-                                <div className='fa-fw fa-2x me-3'>
+                                <div className={`${styles.fontAwesomeSize} fa-fw me-3`}>
                                     <FontAwesomeIcon icon={faSquarePhone} className={`text-primary`}/>
                                 </div>
                                 <ul className={`${styles.mediaBody} list-unstyled mt-3`}>
@@ -101,7 +103,7 @@ const ProfileInfo = () => {
                                 </ul>
                             </div>
                             <div className={`${styles.media} mb-2`}>
-                                <div className='fa-fw fa-2x me-3'>
+                                <div className={`${styles.fontAwesomeSize} fa-fw me-3`}>
                                     <FontAwesomeIcon icon={faAddressCard} className={`text-primary`}/>
                                 </div>
                                 <ul className={`${styles.mediaBody} list-unstyled mt-3`}>
@@ -141,7 +143,7 @@ const ProfileInfo = () => {
                                 </ul>
                             </div>
                             <div className={`${styles.media} mb-2`}>
-                                <div className='fa-fw fa-2x me-3'>
+                                <div className={`${styles.fontAwesomeSize} fa-fw me-3`}>
                                     <FontAwesomeIcon icon={faHouse} className={`text-primary`}/>
                                 </div>
                                 <div className={`${styles.mediaBody} mt-3`}>

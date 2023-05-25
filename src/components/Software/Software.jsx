@@ -94,7 +94,7 @@ const Software = () => {
         <div>
             <Card className='mb-3'>
                 <Card.Header>
-                    <h1 className='text-center'> 
+                    <h1 className={`text-center ${styles.cardHeaderText}`}> 
                         <FontAwesomeIcon icon={faLaptop} className={`text-primary me-2`}/> Software Skills 
                     </h1>
                 </Card.Header>

@@ -125,7 +125,9 @@ const WorkExperience = () => {
         <div>
             <Card className='mb-3'>
                 <Card.Header>
-                    <h1 className='text-center'> Work Experience </h1>
+                    <h1 className={`text-center ${styles.cardHeaderText}`}> 
+                        Work Experience 
+                    </h1>
                 </Card.Header>
                 <Card.Body>
                     {education.slice(0, 1).map((data, index) => (

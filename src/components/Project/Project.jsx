@@ -72,7 +72,9 @@ export default function Projects() {
     <div>
       <Card className='mb-3'>
         <Card.Header>
-          <h1 className='text-center'> Project </h1>
+          <h1 className={`text-center ${styles.cardHeaderText}`}> 
+            Project 
+          </h1>
         </Card.Header>
         <Card.Body>
           {projects.slice(0, 2).map((data, index) => (

@@ -130,7 +130,9 @@ const Skills = () => {
         <div>
             <Card className='mb-3'>
                 <Card.Header>
-                    <h1 className='text-center'> <FontAwesomeIcon icon={faGears} className={`text-primary me-2`}/> Skills </h1>
+                    <h1 className={`text-center ${styles.cardHeaderText}`}> 
+                        <FontAwesomeIcon icon={faGears} className={`text-primary me-2`}/> Skills 
+                    </h1>
                 </Card.Header>
                 <Card.Body>
                     <div className="mb-3">

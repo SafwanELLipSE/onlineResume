@@ -1,10 +1,61 @@
+.cardHeaderText{
+    font-size: 2.5rem;
+}
+
+.fontAwesomeSize {
+    font-size: 2.5rem;
+}
+
+
 .media {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
     align-items: flex-start;
 }
+
 .mediaBody {
     -ms-flex: 1;
     flex: 1;
+}
+
+@media (max-width: 1025px){
+    .cardHeaderText{
+        font-size: 2.2rem;
+    }
+
+    .fontAwesomeSize {
+        font-size: 2.1rem;
+    }
+    
+}
+
+@media (max-width: 769px){
+    .cardHeaderText{
+        font-size: 1.5rem;
+    }
+
+    .fontAwesomeSize {
+        font-size: 0;
+    }    
+}
+
+@media (max-width: 426px) {
+    .cardHeaderText{
+        font-size: 1.7rem;
+    }
+
+    .fontAwesomeSize {
+        font-size: 2.5rem;
+    }    
+}
+
+@media (max-width: 320px) {
+    .cardHeaderText{
+        font-size: 1.5rem;
+    }
+
+    .fontAwesomeSize {
+        font-size: 1.8rem;
+    }    
 }

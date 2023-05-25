@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 //styles
 import "./PersonalStatement.css";
+import styles from "./PersonalStatement.module.css";
 
 const PersonalStatement = () => {
 
@@ -52,7 +53,9 @@ const PersonalStatement = () => {
         <div>
             <Card className='mb-3'>
                 <Card.Header>
-                    <h1 className='text-center'> {data.name} </h1>
+                    <h1 className={`text-center ${styles.cardHeaderText}`}> 
+                        {data.name} 
+                    </h1>
                 </Card.Header>
                 <Card.Body>
                         <p className={`card-text lead personal-card-text-justify lh-sm fs-4`}>

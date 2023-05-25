@@ -75,7 +75,9 @@ const Education = () => {
         <div>
             <Card className='mb-3'>
                 <Card.Header>
-                    <h1 className='text-center'> Education </h1>
+                    <h1 className={`text-center ${styles.cardHeaderText}`}> 
+                        Education 
+                    </h1>
                 </Card.Header>
                 <Card.Body>
                     {education.slice(0, 2).map((data, index) => (
