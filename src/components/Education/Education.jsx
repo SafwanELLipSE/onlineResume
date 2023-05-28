@@ -39,7 +39,7 @@ const Education = () => {
         },
         {
             degree: "B.Sc. in Computer Science and Engineering",
-            institution: "Independent University, Bangladesh(IUB)",
+            institution: "Independent University, Bangladesh (IUB)",
             link: "https://drive.google.com/file/d/1YT27WLngEL0mm8MZUaXnxPxWf3DMYdum/view?usp=sharing",
             startDate: " 01/2016",
             endDate: "01/2020",
@@ -48,7 +48,7 @@ const Education = () => {
             icon: graduationCap
         },
         {
-            degree: "Higher Secondary Certificate(HSC) in Science",
+            degree: "Higher Secondary Certificate (HSC) in Science",
             institution: "St. Joseph Higher Secondary School",
             link: "https://drive.google.com/file/d/1Ha9xt79UibqBnsj8OdfqdwwQIeNnIrZm/view?usp=sharing",
             startDate: "05/2013",
@@ -58,7 +58,7 @@ const Education = () => {
             icon: buildingColumns
         },
         {
-            degree: "Secondary School Certificate(SSC) in Science",
+            degree: "Secondary School Certificate (SSC) in Science",
             institution: "Mohammadpur Preparatory Higher Secondary School",
             link: "https://drive.google.com/file/d/1JE_AW4DZ_DDuTVHsWtPJg2m3CAOmrJrl/view?usp=sharing",
             startDate: " 01/2011",

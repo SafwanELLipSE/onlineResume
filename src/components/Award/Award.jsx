@@ -16,7 +16,7 @@ export default function Awards() {
   const [open, setOpen] = useState(false);
 
   const awardIcon = (
-    <FontAwesomeIcon icon={faAward} className={`fa-3x text-primary me-3`}/>
+    <FontAwesomeIcon icon={faAward} className={`${styles.awardIcon}`}/>
   );
 
   const awards = [
@@ -24,8 +24,8 @@ export default function Awards() {
         name: "Renewable Energy",
         from: "School of Environmental Science and Management(SESM) at Independent University, Bangladesh(IUB)",
         link: "https://drive.google.com/file/d/1RB0rcuTVRDbAxrNuWCR21GnPVb8gTJKD/view",
-        startDate: "27 / 06 / 2018",
-        endDate: "28 / 06 / 2018",
+        startDate: "27/06/2018",
+        endDate: "28/06/2018",
         dateTimeStart: "2018-06-27",
         dateTimeEnd: "2018-06-28",
         icon: awardIcon
@@ -34,8 +34,8 @@ export default function Awards() {
         name: "Book Reading Competition 2016",
         from: "Independent University, Bangladesh(IUB)",
         link: "https://drive.google.com/file/d/1YT27WLngEL0mm8MZUaXnxPxWf3DMYdum/view?usp=sharing",
-        startDate: "08 / 2016",
-        endDate: "08 / 2016",
+        startDate: "08/2016",
+        endDate: "08/2016",
         dateTimeStart: "2016-08",
         dateTimeEnd: "2016-08",
         icon: awardIcon
@@ -56,13 +56,18 @@ export default function Awards() {
                   <div className={`${styles.media} mb-2`}>
                       {data.icon}
                       <div className={`${styles.mediaBody}`}>
-                          <h4 className={`mb-1`}> {data.name} </h4>
+                          <h4 className={`${styles.awardTitle}`}> 
+                            {data.name} 
+                          </h4>
                           <div className={`${styles.award}`}>
-                              <h5 className="mb-0">
-                                  <a target="_blank" href={`${data.link}`}>{data.from}</a>
+                              <h5 className={`${styles.awardLinkText}`}>
+                                  <a target="_blank" href={`${data.link}`}> 
+                                    {data.from} 
+                                  </a>
                               </h5>
-                              <small className={`${styles.date}`}>
-                                  <time dateTime={`${data.dateTimeStart}`}> {data.startDate} </time> &ndash; <time dateTime={`${data.dateTimeEnd}`}> {data.endDate} </time>
+                              <small className={`${styles.dateText}`}>
+                                <time dateTime={`${data.dateTimeStart}`}> {data.startDate} </time> &ndash; 
+                                <time dateTime={`${data.dateTimeEnd}`}> {data.endDate} </time>
                               </small>
                           </div>
                       </div>
@@ -78,13 +83,18 @@ export default function Awards() {
                       <div className={`${styles.media} mb-2`}>
                           {data.icon}
                           <div className={`${styles.mediaBody}`}>
-                              <h4 className={`mb-1`}> {data.name} </h4>
+                              <h4 className={`${styles.awardTitle}`}> 
+                                {data.name} 
+                              </h4>
                               <div className={`${styles.award}`}>
-                                  <h5 className="mb-0">
-                                      <a target="_blank" href={`${data.link}`}>{data.from}</a>
+                                  <h5 className={`${styles.awardLinkText}`}>
+                                      <a target="_blank" href={`${data.link}`}>
+                                        {data.from}
+                                      </a>
                                   </h5>
-                                  <small className={`${styles.date}`}>
-                                      <time dateTime={`${data.dateTimeStart}`}> {data.startDate} </time> &ndash; <time dateTime={`${data.dateTimeEnd}`}> {data.endDate} </time>
+                                  <small className={`${styles.dateText}`}>
+                                    <time dateTime={`${data.dateTimeStart}`}> {data.startDate} </time> &ndash;  
+                                    <time dateTime={`${data.dateTimeEnd}`}> {data.endDate} </time>
                                   </small>
                               </div>
                           </div>
@@ -94,7 +104,12 @@ export default function Awards() {
               ))}
             </div>
           </Collapse>
-          <Button onClick={() => setOpen(!open)} className={`float-end ${styles.blueOutlineBtn}`} aria-controls="collapse-award" aria-expanded={open}>
+          <Button 
+            onClick={() => setOpen(!open)} 
+            className={`float-end ${styles.blueOutlineBtn}`} 
+            aria-controls="collapse-award" 
+            aria-expanded={open}
+          >
               Show All
           </Button>
         </Card.Body>

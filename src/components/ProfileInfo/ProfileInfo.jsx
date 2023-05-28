@@ -159,7 +159,9 @@ const ProfileInfo = () => {
 										Mirpur, Dhaka-1216 <br/> 
 										Bangladesh
 									</address>
+                                    <hr />
                                 </div>
+
                             </div>
                         </div>
                     </Collapse>

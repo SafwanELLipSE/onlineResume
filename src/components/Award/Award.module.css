@@ -20,11 +20,35 @@
     align-items: baseline;
 }
 
-.date {
+.awardIcon {
+    color: #0d6efd;
+    font-size: 2.8rem;
+    margin-right: 1rem;
+}
+
+.awardTitle {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.awardLinkText {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    width: 75%;
+}
+
+.awardLinkText > a {
+    text-decoration: none !important;
+}
+
+.dateText {
+    font-size: .9rem;
     display: block;
     text-transform: uppercase;
     color: #6c757d;
     font-weight: bold;
+    text-align: right;
+    width: 25%;
 }
 
 .blueOutlineBtn{
@@ -49,6 +73,22 @@
         font-size: 2.2rem;
     }
 
+    .awardIcon {
+        font-size: 2.4rem;
+    }
+
+    .awardTitle {
+        font-size: 1.5rem;
+    }
+
+    .awardLinkText {
+        font-size: 1.1rem;
+    }
+
+    .dateText {
+        font-size: .8rem;
+    }
+
     .blueOutlineBtn{
         width: 5rem;
         height: 2.1rem;
@@ -60,6 +100,22 @@
 @media (max-width: 769px){
     .cardHeaderText{
         font-size: 1.5rem;
+    }
+
+    .awardIcon {
+        font-size: 2.2rem;
+    }
+
+    .awardTitle {
+        font-size: 1.2rem;
+    }
+
+    .awardLinkText {
+        font-size:  1.05rem;
+    }
+
+    .dateText {
+        font-size: .8rem;
     }
 
     .blueOutlineBtn{
@@ -75,6 +131,22 @@
         font-size: 1.7rem;
     }
 
+    .awardIcon {
+        font-size: 2rem;
+    }
+
+    .awardTitle {
+        font-size: 1.1rem;
+    }
+
+    .awardLinkText {
+        font-size:  0.9rem;
+    }
+
+    .dateText {
+        font-size: .65rem;
+    }
+
     .blueOutlineBtn{
         width: 4rem;
         height: 2rem;
@@ -86,6 +158,22 @@
 @media (max-width: 320px) {
     .cardHeaderText{
         font-size: 1.5rem;
+    }
+
+    .awardIcon {
+        font-size: 2rem;
+    }
+
+    .awardTitle {
+        font-size: 1.1rem;
+    }
+
+    .awardLinkText {
+        font-size: 0.9rem;
+    }
+
+    .dateText {
+        font-size: .65rem;
     }
 
     .blueOutlineBtn{
