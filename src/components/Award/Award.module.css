@@ -30,7 +30,7 @@
 .blueOutlineBtn{
     width: 5.6rem;
     height: 2.4rem;
-    font-size: 16px !important;
+    font-size: 1rem !important;
     border: 2px solid #0d6efd !important;
     border-radius: 8px !important;
     background-color: #ffffff !important;
@@ -53,7 +53,7 @@
         width: 5rem;
         height: 2.1rem;
         padding: 0 !important;
-        font-size: 14px !important;
+        font-size: 0.875rem !important;
     }
 }
 
@@ -63,10 +63,10 @@
     }
 
     .blueOutlineBtn{
-        width: 4.8rem;
+        width: 4.5rem;
         height: 1.8rem;
         padding: 0 !important;
-        font-size: 12px !important;
+        font-size: 0.75rem !important;
     }
 }
 
@@ -76,10 +76,10 @@
     }
 
     .blueOutlineBtn{
-        width: 5rem;
-        height: 2.1rem;
+        width: 4rem;
+        height: 2rem;
         padding: 0 !important;
-        font-size: 14px !important;
+        font-size: 0.75rem !important;
     }
 }
 
@@ -89,9 +89,9 @@
     }
 
     .blueOutlineBtn{
-        width: 5rem;
-        height: 2.1rem;
+        width: 3.8rem;
+        height: 1.8rem;
         padding: 0 !important;
-        font-size: 14px !important;
+        font-size: 0.75rem !important;
     }
 }
