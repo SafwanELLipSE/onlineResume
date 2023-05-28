@@ -78,7 +78,7 @@ export default function Main() {
                         <PersonalStatement />
                         <WorkExperience />
                         <Education />
-                        <Projects/>
+                        {/* <Projects/> */}
                         <OnlineCertificates />
                         <AdditionalActivities />
                         <Awards />
