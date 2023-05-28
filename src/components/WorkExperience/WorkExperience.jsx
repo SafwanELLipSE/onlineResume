@@ -14,11 +14,11 @@ import styles from "./WorkExperience.module.css";
 const WorkExperience = () => {
 
     const briefCase = (
-        <FontAwesomeIcon icon={faBriefcase} className={`fa-3x text-primary me-2`}/>
+        <FontAwesomeIcon icon={faBriefcase} className={`${styles.briefcaseIcon}`}/>
     );
 
     const arrowRight = (
-        <FontAwesomeIcon icon={faArrowRight} className={`text-primary mt-1`}/>
+        <FontAwesomeIcon icon={faArrowRight} className={`${styles.arrowRight}`}/>
     );
 
     const education = [
@@ -27,7 +27,7 @@ const WorkExperience = () => {
             company: "Elizabeth School of London",
             location: "Canary Wharf, London, United Kingdom",
             link: "https://elizabethschool.com/",
-            startDate: "01 / 04 / 2023",
+            startDate: "01/04/2023",
             endDate: "Present",
             dateTimeStart: "2023-04-01",
             dateTimeEnd: "Present",
@@ -45,8 +45,8 @@ const WorkExperience = () => {
             company: "Subway",
             location: "Surbiton Rd, Kingston upon Thames, London, United Kingdom",
             link: "https://www.subway.com/en-GB",
-            startDate: "24 / 02 / 2023",
-            endDate: "31 / 03 / 2023",
+            startDate: "24/02/2023",
+            endDate: "31/03/2023",
             dateTimeStart: "2023-02-24",
             dateTimeEnd: "2023-03-31",
             icon: briefCase,
@@ -65,8 +65,8 @@ const WorkExperience = () => {
             company: "Subway",
             location: "Stratford the Mall, London, United Kingdom",
             link: "https://www.subway.com/en-GB",
-            startDate: "25 / 08 / 2022",
-            endDate: "06 / 11 / 2022",
+            startDate: "25/08/2022",
+            endDate: "06/11/2022",
             dateTimeStart: "2022-08-25",
             dateTimeEnd: "2022-11-06",
             icon: briefCase,
@@ -84,8 +84,8 @@ const WorkExperience = () => {
             company: "JhoroTEK",
             location: "Wakil Tower (Level-8), TA-131, Gulshan-1, Dhaka-1212, Bangladesh",
             link: "https://jhorotek.com/",
-            startDate: "01 / 02 / 2021",
-            endDate: "09 / 06 / 2022",
+            startDate: "01/02/2021",
+            endDate: "09/06/2022",
             dateTimeStart: "2021-02-01",
             dateTimeEnd: "2022-06-09",
             icon: briefCase,
@@ -103,8 +103,8 @@ const WorkExperience = () => {
             company: "JhoroTEK",
             location: "Wakil Tower (Level-8), TA-131, Gulshan-1, Dhaka-1212, Bangladesh",
             link: "https://jhorotek.com/",
-            startDate: "02 / 2020",
-            endDate: "06 / 2022",
+            startDate: "02/2020",
+            endDate: "06/2022",
             dateTimeStart: "2021-02",
             dateTimeEnd: "2022-06",
             icon: briefCase,
@@ -135,16 +135,17 @@ const WorkExperience = () => {
                             <div className={`${styles.media} mb-2`}>
                                 {briefCase}
                                 <div className={`${styles.mediaBody}`}>
-                                    <h4 className={`mb-1`}> {data.job} </h4>
+                                    <h4 className={`${styles.jobTitle}`}> {data.job} </h4>
                                     <div className={`${styles.company}`}>
                                         <div className={`${styles.onlineInner}`}>
-                                            <h5 className="mb-0">
+                                            <h5 className={`${styles.jobLinkText}`}>
                                                 <a target="_blank" href={`${data.link}`}> {data.company} </a>
                                             </h5>
                                             <h6 className={`${styles.textInner} text-muted mt-2`}> {data.location} </h6>
                                         </div>
-                                        <small className={`${styles.date}`}>
-                                            <time dateTime={`${data.dateTimeStart}`}> {data.startDate} </time> &ndash; <time dateTime={`${data.dateTimeEnd}`}> {data.endDate} </time>
+                                        <small className={`${styles.dateText}`}>
+                                            <time dateTime={`${data.dateTimeStart}`}> {data.startDate} </time> &ndash; 
+                                            <time dateTime={`${data.dateTimeEnd}`}> {data.endDate} </time>
                                         </small>
                                     </div>
                                     <ul className={`list-unstyled mt-3`}>
@@ -152,7 +153,7 @@ const WorkExperience = () => {
                                             <span key={index}>
                                                 <li className='d-flex align-items-start'>
                                                     {arrowRight} 
-                                                    <p className='ms-2 mb-0'>{data}</p>
+                                                    <p className={`${styles.responsibilityText}`}>{data}</p>
                                                 </li>
                                             </span>
                                         ))}
@@ -169,16 +170,17 @@ const WorkExperience = () => {
                                     <div className={`${styles.media} mb-2`}>
                                         {briefCase}
                                         <div className={`${styles.mediaBody}`}>
-                                            <h4 className={`mb-1`}> {data.job} </h4>
+                                            <h4 className={`${styles.jobTitle}`}> {data.job} </h4>
                                             <div className={`${styles.company}`}>
                                                 <div className={`${styles.onlineInner}`}>
-                                                    <h5 className="mb-0">
+                                                    <h5 className={`${styles.jobLinkText}`}>
                                                         <a target="_blank" href={`${data.link}`}> {data.company} </a>
                                                     </h5>
                                                     <h6 className={`${styles.textInner} text-muted mt-2`}> {data.location} </h6>
                                                 </div>
-                                                <small className={`${styles.date}`}>
-                                                    <time dateTime={`${data.dateTimeStart}`}> {data.startDate} </time> &ndash; <time dateTime={`${data.dateTimeEnd}`}> {data.endDate} </time>
+                                                <small className={`${styles.dateText}`}>
+                                                    <time dateTime={`${data.dateTimeStart}`}> {data.startDate} </time> &ndash; 
+                                                    <time dateTime={`${data.dateTimeEnd}`}> {data.endDate} </time>
                                                 </small>
                                             </div>
                                             <ul className={`list-unstyled mt-3`}>
@@ -186,7 +188,7 @@ const WorkExperience = () => {
                                                     <span key={index}>
                                                         <li className='d-flex align-items-start'>
                                                             {arrowRight}                                                                
-                                                            <p className='ms-2 mb-0'>{data}</p>
+                                                            <p className={`${styles.responsibilityText}`}>{data}</p>
                                                         </li>
                                                     </span>
                                                 ))}

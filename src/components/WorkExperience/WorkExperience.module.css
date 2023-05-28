@@ -23,6 +23,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 60%;
+}
+
+.briefcaseIcon{
+    color: #0d6efd;
+    font-size: 2.8rem;
+    margin-right: 1rem;
+}
+
+.jobTitle{
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.jobLinkText{
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.jobLinkText > a{
+    text-decoration: none !important;
 }
 
 .textInner{
@@ -30,11 +51,28 @@
     font-weight: bold;
 }
 
-.date {
+.dateText {
+    width: 40%;
+    font-size: .9rem;
     display: block;
     text-transform: uppercase;
     color: #6c757d;
     font-weight: bold;
+    text-align: right;
+}
+
+.arrowRight{
+    color: #0d6efd;
+    font-size: 1.1rem;
+    margin-top: .3rem;
+}
+
+.responsibilityText{
+    font-size: 1.1rem;
+    margin-left: .5rem;
+    margin-bottom: 0;
+    text-align: justify;
+    text-justify: auto;
 }
 
 .blueOutlineBtn{
@@ -59,6 +97,26 @@
         font-size: 2.2rem;
     }
 
+    .briefcaseIcon{
+        font-size: 2.4rem;
+    }    
+    
+    .jobTitle{
+        font-size: 1.5rem;
+    }
+    
+    .jobLinkText{
+        font-size: 1.1rem;
+    }
+
+    .dateText {
+        font-size: .8rem;
+    }
+
+    .responsibilityText{
+        font-size: 1rem;
+    }
+
     .blueOutlineBtn{
         width: 5rem;
         height: 2.1rem;
@@ -70,6 +128,35 @@
 @media (max-width: 769px){
     .cardHeaderText{
         font-size: 1.5rem;
+    }
+
+    .briefcaseIcon{
+        font-size: 2.2rem;
+    }    
+    
+    .jobTitle{
+        font-size: 1.2rem;
+    }
+    
+    .jobLinkText{
+        font-size: 1.05rem;
+    }
+
+    .textInner{
+        font-size: .7rem !important;
+    }
+
+    .dateText {
+        font-size: .7rem;
+    }
+
+    .arrowRight{
+        font-size: .9rem;
+        margin-top: .2rem;
+    }
+
+    .responsibilityText{
+        font-size: .8rem;
     }
 
     .blueOutlineBtn{
@@ -85,6 +172,35 @@
         font-size: 1.7rem;
     }
 
+    .briefcaseIcon{
+        font-size: 2rem;
+    }    
+    
+    .jobTitle{
+        font-size: 1.1rem;
+    }
+    
+    .jobLinkText{
+        font-size: .9rem;
+    }
+
+    .textInner{
+        font-size: .65rem !important;
+    }
+
+    .dateText {
+        font-size: .65rem;
+    }
+
+    .arrowRight{
+        font-size: .8rem;
+        margin-top: .4rem;
+    }
+
+    .responsibilityText{
+        font-size: 1rem;
+    }
+
     .blueOutlineBtn{
         width: 5rem;
         height: 2.1rem;
@@ -96,6 +212,35 @@
 @media (max-width: 320px) {
     .cardHeaderText{
         font-size: 1.5rem;
+    }
+
+    .briefcaseIcon{
+        font-size: 2rem;
+    }    
+    
+    .jobTitle{
+        font-size: 1.1rem;
+    }
+    
+    .jobLinkText{
+        font-size: .9rem;
+    }
+
+    .textInner{
+        font-size: .65rem !important;
+    }
+
+    .dateText {
+        font-size: .65rem;
+    }
+
+    .arrowRight{
+        font-size: .8rem;
+        margin-top: .2rem;
+    }
+
+    .responsibilityText{
+        font-size: 0.75rem;
     }
 
     .blueOutlineBtn{
