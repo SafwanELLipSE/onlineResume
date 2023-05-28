@@ -128,7 +128,12 @@ const Software = () => {
                                 ))}
                             </div>
                         </Collapse>
-                        <Button onClick={() => setOpen(!open)} variant="outline-primary" className='float-end' aria-controls="collapse-software" aria-expanded={open}>
+                        <Button 
+                            onClick={() => setOpen(!open)} 
+                            className={`float-end ${styles.blueOutlineBtn}`}  
+                            aria-controls="collapse-software" 
+                            aria-expanded={open}
+                        >
                             Show All
                         </Button>
                     </div>

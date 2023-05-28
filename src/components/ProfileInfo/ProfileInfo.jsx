@@ -163,7 +163,12 @@ const ProfileInfo = () => {
                             </div>
                         </div>
                     </Collapse>
-                    <Button onClick={() => setOpen(!open)} variant="outline-primary" className='float-end' aria-controls="collapse-profileInfo" aria-expanded={open}>
+                    <Button 
+                        onClick={() => setOpen(!open)} 
+                        className={`float-end ${styles.blueOutlineBtn}`} 
+                        aria-controls="collapse-profileInfo" 
+                        aria-expanded={open}
+                    >
                         Show All
                     </Button>
                 </Card.Body>

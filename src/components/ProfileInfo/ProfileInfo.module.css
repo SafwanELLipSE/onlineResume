@@ -6,7 +6,6 @@
     font-size: 2.5rem;
 }
 
-
 .media {
     display: -ms-flexbox;
     display: flex;
@@ -19,6 +18,23 @@
     flex: 1;
 }
 
+.blueOutlineBtn{
+    width: 5.6rem;
+    height: 2.4rem;
+    font-size: 16px !important;
+    border: 2px solid #0d6efd !important;
+    border-radius: 8px !important;
+    background-color: #ffffff !important;
+    color: #0d6efd !important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.blueOutlineBtn:hover{
+    color: #ffffff !important;
+    background-color: #0d6efd !important;
+}
+
 @media (max-width: 1025px){
     .cardHeaderText{
         font-size: 2.2rem;
@@ -28,6 +44,12 @@
         font-size: 2.1rem;
     }
     
+    .blueOutlineBtn{
+        width: 5rem;
+        height: 2.1rem;
+        padding: 0 !important;
+        font-size: 14px !important;
+    }
 }
 
 @media (max-width: 769px){
@@ -36,8 +58,16 @@
     }
 
     .fontAwesomeSize {
-        font-size: 0;
+        visibility: none;
+        display: none;
     }    
+
+    .blueOutlineBtn{
+        width: 4.8rem;
+        height: 1.8rem;
+        padding: 0 !important;
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width: 426px) {
@@ -47,7 +77,16 @@
 
     .fontAwesomeSize {
         font-size: 2.5rem;
-    }    
+        visibility: visible;
+        display: block;
+    }  
+    
+    .blueOutlineBtn{
+        width: 5rem;
+        height: 2.1rem;
+        padding: 0 !important;
+        font-size: 14px !important;
+    }
 }
 
 @media (max-width: 320px) {
@@ -57,5 +96,14 @@
 
     .fontAwesomeSize {
         font-size: 1.8rem;
-    }    
+        visibility: visible;
+        display: block;
+    }   
+    
+    .blueOutlineBtn{
+        width: 5rem;
+        height: 2.1rem;
+        padding: 0 !important;
+        font-size: 14px !important;
+    }
 }

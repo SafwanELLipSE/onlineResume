@@ -80,7 +80,7 @@ export default function AdditionalActivities() {
               ))}
             </div>
           </Collapse>
-          <Button onClick={() => setOpen(!open)} variant="outline-primary" className='float-end' aria-controls="collapse-addition-activities" aria-expanded={open}>
+          <Button onClick={() => setOpen(!open)} className={`float-end ${styles.blueOutlineBtn}`} aria-controls="collapse-addition-activities" aria-expanded={open}>
               Show All
           </Button>
         </Card.Body>

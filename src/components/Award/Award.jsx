@@ -94,7 +94,7 @@ export default function Awards() {
               ))}
             </div>
           </Collapse>
-          <Button onClick={() => setOpen(!open)} variant="outline-primary" className='float-end' aria-controls="collapse-award" aria-expanded={open}>
+          <Button onClick={() => setOpen(!open)} className={`float-end ${styles.blueOutlineBtn}`} aria-controls="collapse-award" aria-expanded={open}>
               Show All
           </Button>
         </Card.Body>
