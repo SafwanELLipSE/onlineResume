@@ -16,11 +16,11 @@ export default function OnlineCertificates() {
   const [open, setOpen] = useState(false);
 
   const certificateIcon = (
-    <FontAwesomeIcon icon={faCertificate} className={`fa-3x text-primary me-3 mt-3`}/>
+    <FontAwesomeIcon icon={faCertificate} className={`${styles.certificateIcon}`}/>
   );
 
   const starIcon = (
-    <FontAwesomeIcon icon={faStar} className={`fa-3x text-primary me-3 mt-3`}/>
+    <FontAwesomeIcon icon={faStar} className={`${styles.certificateIcon}`}/>
   );
 
   const certificates = [
@@ -29,7 +29,7 @@ export default function OnlineCertificates() {
       from: "Udemy",
       link: "https://drive.google.com/file/d/1ijD6C-bMKViO-Ap4AfkTpPQ54ersZp2G/view?usp=sharing",
       type: "Certificate",
-      date: "18 / 03 / 2023",
+      date: "18/03/2023",
       dateTime: "2023-03-18",
       icon: certificateIcon
     },
@@ -38,7 +38,7 @@ export default function OnlineCertificates() {
         from: "HackerRank",
         link: "https://drive.google.com/file/d/1YoRsvbg5ONsyG6nHM7k0mFRDiKrOu_WC/view?usp=sharing",
         type: "Certificate",
-        date: "12 / 03 / 2023",
+        date: "12/03/2023",
         dateTime: "2023-03-12",
         icon: certificateIcon
     },
@@ -47,7 +47,7 @@ export default function OnlineCertificates() {
         from: "HackerRank",
         link: "https://drive.google.com/file/d/10RQgMFtz0gZhxnOlD9I2HvoSNCFdKUed/view?usp=sharing",
         type: "Certificate",
-        date: "11 / 02 / 2023",
+        date: "11/02/2023",
         dateTime: "2023-03-11",
         icon: certificateIcon
     },
@@ -56,7 +56,7 @@ export default function OnlineCertificates() {
         from: "Udemy",
         link: "https://drive.google.com/file/d/1x_Xbvi5vFDbSOBG_mkW3WxWkVYktIFM4/view?usp=sharing",
         type: "Certificate",
-        date: "23 / 02 / 2023",
+        date: "23/02/2023",
         dateTime: "2023-02-23",
         icon: certificateIcon
     },
@@ -65,7 +65,7 @@ export default function OnlineCertificates() {
         from: "Highfield",
         link: "https://drive.google.com/file/d/1M-PIfFsqawAo4AO7lRXdmMzkSv9Tn-V-/view?usp=sharing",
         type: "Certificate",
-        date: "31 / 01 / 2023",
+        date: "31/01/2023",
         dateTime: "2023-01-31",
         icon: certificateIcon
     },
@@ -74,7 +74,7 @@ export default function OnlineCertificates() {
         from: "Lilly Angel",
         link: "",
         type: "Certificate",
-        date: "31 / 01 / 2023",
+        date: "31/01/2023",
         dateTime: "2023-01-31",
         icon: certificateIcon
     },
@@ -83,7 +83,7 @@ export default function OnlineCertificates() {
         from: "datacamp",
         link: "https://drive.google.com/file/d/1WQtJjwB6szDZwdoCZfbbbN_8iLXG_0mR/view?usp=sharing",
         type: "Accomplishment",
-        date: "13 / 11 / 2022",
+        date: "13/11/2022",
         dateTime: "2022-11-13",
         icon: starIcon
     },
@@ -92,7 +92,7 @@ export default function OnlineCertificates() {
         from: "datacamp",
         link: "https://drive.google.com/file/d/17TfEeb8FvhIUp-kVrZjSmAB3u91-MutD/view?usp=sharing",
         type: "Accomplishment",
-        date: "27 / 10 / 2022",
+        date: "27/10/2022",
         dateTime: "2022-10-27",
         icon: starIcon
     },
@@ -101,7 +101,7 @@ export default function OnlineCertificates() {
         from: "datacamp",
         link: "https://drive.google.com/file/d/1oB6mPYLh1l0b6zhRu8W_tYJoANvT86cI/view?usp=sharing",
         type: "Accomplishment",
-        date: "26 / 10 / 2022",
+        date: "26/10/2022",
         dateTime: "2022-10-26",
         icon: starIcon
     },
@@ -157,15 +157,15 @@ export default function OnlineCertificates() {
                   <div className={`${styles.media} mb-2`}>
                       {data.icon}
                       <div className={`${styles.mediaBody}`}>
-                          <h4 className={`mb-1`}> {data.name} </h4>
+                          <h4 className={`${styles.onlineTitle}`}> {data.name} </h4>
                           <div className={`${styles.online}`}>
                               <div className={`${styles.onlineInner}`}>
-                                <h5 className="mb-0">
+                                <h5 className={`${styles.onlineLinkText}`}>
                                   <a target="_blank" href={`${data.link}`}> {data.from} </a>
                                 </h5>
                                 <h6 className={`${styles.textInner} text-muted mt-2`}> {data.type} </h6>
                               </div>
-                                <small className={`${styles.date}`}>
+                                <small className={`${styles.dateText}`}>
                                   <time dateTime={`${data.dateTime}`}> {data.date} </time>
                                 </small>
                           </div>
@@ -182,16 +182,20 @@ export default function OnlineCertificates() {
                       <div className={`${styles.media} mb-2`}>
                           {data.icon}
                           <div className={`${styles.mediaBody}`}>
-                              <h4 className={`mb-1`}> {data.name} </h4>
+                              <h4 className={`${styles.onlineTitle}`}> {data.name} </h4>
                               <div className={`${styles.online}`}>
                                   <div className={`${styles.onlineInner}`}>
-                                    <h5 className="mb-0">
-                                      <a target="_blank" href={`${data.link}`}> {data.from} </a>
+                                    <h5 className={`${styles.onlineLinkText}`}>
+                                      <a target="_blank" href={`${data.link}`}> 
+                                        {data.from} 
+                                      </a>
                                     </h5>
                                     <h6 className={`${styles.textInner} text-muted mt-2`}> {data.type} </h6>
                                   </div>
-                                    <small className={`${styles.date}`}>
-                                      <time dateTime={`${data.dateTime}`}> {data.date} </time>
+                                    <small className={`${styles.dateText}`}>
+                                      <time dateTime={`${data.dateTime}`}> 
+                                        {data.date} 
+                                      </time>
                                     </small>
                               </div>
                           </div>
