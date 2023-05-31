@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/onlineResume/static/css/main.6c5f00ee.css",
-    "main.js": "/onlineResume/static/js/main.ff230e16.js",
+    "main.css": "/onlineResume/static/css/main.2674f805.css",
+    "main.js": "/onlineResume/static/js/main.d66d3533.js",
     "static/js/787.fec3bd3a.chunk.js": "/onlineResume/static/js/787.fec3bd3a.chunk.js",
     "static/media/CV.jpg": "/onlineResume/static/media/CV.08baaf874fc8fcd9e84f.jpg",
     "static/media/K-M-Safwan-Hassan-Resume.docx": "/onlineResume/static/media/K-M-Safwan-Hassan-Resume.956ea12e38d73e416354.docx",
     "index.html": "/onlineResume/index.html",
-    "main.6c5f00ee.css.map": "/onlineResume/static/css/main.6c5f00ee.css.map",
-    "main.ff230e16.js.map": "/onlineResume/static/js/main.ff230e16.js.map",
+    "main.2674f805.css.map": "/onlineResume/static/css/main.2674f805.css.map",
+    "main.d66d3533.js.map": "/onlineResume/static/js/main.d66d3533.js.map",
     "787.fec3bd3a.chunk.js.map": "/onlineResume/static/js/787.fec3bd3a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c5f00ee.css",
-    "static/js/main.ff230e16.js"
+    "static/css/main.2674f805.css",
+    "static/js/main.d66d3533.js"
   ]
 }
