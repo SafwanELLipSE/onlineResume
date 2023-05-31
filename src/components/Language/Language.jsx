@@ -61,6 +61,7 @@ const Language = () => {
                                     </ProgressBar>
                                 </div>
                             ))}
+                            <hr />
                             </div>
                         </Collapse>
                         <Button 

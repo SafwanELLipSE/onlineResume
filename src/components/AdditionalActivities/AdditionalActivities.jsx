@@ -16,7 +16,7 @@ export default function AdditionalActivities() {
   const [open, setOpen] = useState(false);
 
   const handshakeAngle = (
-    <FontAwesomeIcon icon={faHandshakeAngle} className={`fa-3x text-primary me-3`}/>
+    <FontAwesomeIcon icon={faHandshakeAngle} className={`${styles.handshakeIcon}`}/>
   );
 
   const activities = [
@@ -47,15 +47,20 @@ export default function AdditionalActivities() {
                 {data.icon}
                 <div className={`${styles.mediaBody}`}>
                     <div className={`${styles.mediaBody}`}>
-                      <h4 className={`mb-1`}> {data.name} </h4>
+                      <h4 className={`${styles.activitiesTitle}`}> 
+                        {data.name} 
+                      </h4>
                       <div className={`${styles.additionalActivities}`}>
-                        <h5 className="mb-0">
-                          <a href="#0">{data.from}</a>
+                        <h5 className={`${styles.activitiesLinkText}`}>
+                          <a href="#0">
+                            {data.from}
+                          </a>
                         </h5>
                       </div>
                     </div>
                 </div>
               </div>
+              <hr />
             </div>
           ))}
 
@@ -67,15 +72,20 @@ export default function AdditionalActivities() {
                     {data.icon}
                     <div className={`${styles.mediaBody}`}>
                         <div className={`${styles.mediaBody}`}>
-                          <h4 className={`mb-1`}> {data.name} </h4>
+                          <h4 className={`${styles.activitiesTitle}`}> 
+                            {data.name} 
+                          </h4>
                           <div className={`${styles.additionalActivities}`}>
-                            <h5 className="mb-0">
-                              <a href="#0">{data.from}</a>
+                            <h5 className={`${styles.activitiesLinkText}`}>
+                              <a href="#0">
+                                {data.from}
+                              </a>
                             </h5>
                           </div>
                         </div>
                     </div>
                   </div>
+                  <hr />
                 </div>
               ))}
             </div>

@@ -162,6 +162,7 @@ const Skills = () => {
                                     </ProgressBar>
                                 </div>
                             ))}
+                            <hr />
                             <h3 className="h5 mb-3">{userIcon} Interpersonal Skills</h3>
                             {interpersonalList.map((data, index) => (
                                 <div key={index}>
@@ -174,6 +175,7 @@ const Skills = () => {
                                     </ProgressBar>
                                 </div>
                             ))}
+                            <hr />
                             <h3 className="h5 mb-3">{earthAmericas} Framework & Library</h3>
                             {librariesList.map((data, index) => (
                                 <div key={index}>
@@ -186,6 +188,7 @@ const Skills = () => {
                                     </ProgressBar>
                                 </div>
                             ))}
+                            <hr />
                             </div>
                         </Collapse>
                         <Button 
