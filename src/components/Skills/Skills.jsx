@@ -137,10 +137,10 @@ const Skills = () => {
                 <Card.Body>
                     <div className="mb-3">
                         {/* Programming Skills */}
-                        <h3 className="h5 mb-3">{skillIcon} Programming Skills</h3>
+                        <h3 className={`${styles.secondaryHeaderText}`}>{skillIcon} Programming Skills</h3>
                         {skillList.slice(0, 2).map((data, index) => (
                             <div key={index}>
-                                <h4 className="h6 text-muted">
+                                <h4 className={`${styles.thirdText}`}>
                                     <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/> 
                                     {data.name}
                                 </h4>
@@ -153,7 +153,7 @@ const Skills = () => {
                             <div id="collapse-language">
                             {skillList.slice(2, 8).map((data, index) => (
                                 <div key={index}>
-                                    <h4 className="h6 text-muted">
+                                    <h4 className={`${styles.thirdText}`}>
                                         <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/> 
                                         {data.name}
                                     </h4>
@@ -163,10 +163,10 @@ const Skills = () => {
                                 </div>
                             ))}
                             <hr />
-                            <h3 className="h5 mb-3">{userIcon} Interpersonal Skills</h3>
+                            <h3 className={`${styles.secondaryHeaderText}`}>{userIcon} Interpersonal Skills</h3>
                             {interpersonalList.map((data, index) => (
                                 <div key={index}>
-                                    <h4 className="h6 text-muted">
+                                    <h4 className={`${styles.thirdText}`}>
                                         <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/> 
                                         {data.name}
                                     </h4>
@@ -176,10 +176,10 @@ const Skills = () => {
                                 </div>
                             ))}
                             <hr />
-                            <h3 className="h5 mb-3">{earthAmericas} Framework & Library</h3>
+                            <h3 className={`${styles.secondaryHeaderText}`}>{earthAmericas} Framework & Library</h3>
                             {librariesList.map((data, index) => (
                                 <div key={index}>
-                                    <h4 className="h6 text-muted">
+                                    <h4 className={`${styles.thirdText}`}>
                                         <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/>
                                         {data.name}
                                     </h4>

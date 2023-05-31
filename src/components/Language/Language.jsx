@@ -42,10 +42,10 @@ const Language = () => {
                 </Card.Header>
                 <Card.Body>
                     <div className="mb-3">
-                        <h3 className="h5 mb-3">Languages</h3>
+                        <h3 className={`${styles.secondaryHeaderText}`}>Languages</h3>
                         {languageList.slice(0, 1).map((data, index) => (
                             <div key={index}>
-                                <h4 className="h6 text-muted">{languageIcon} {data.type}</h4>
+                                <h4 className={`${styles.thirdText}`}>{languageIcon} {data.type}</h4>
                                 <ProgressBar className='mb-3'>
                                     <ProgressBar striped animated variant="success" now={data.progress} label={`${data.progress}%`} />
                                 </ProgressBar>
@@ -55,7 +55,7 @@ const Language = () => {
                             <div id="collapse-language">
                             {languageList.slice(1, 2).map((data, index) => (
                                 <div key={index}>
-                                    <h4 className="h6 text-muted">{languageIcon} {data.type}</h4>
+                                    <h4 className={`${styles.thirdText}`}>{languageIcon} {data.type}</h4>
                                     <ProgressBar className='mb-3'>
                                         <ProgressBar striped animated variant="success" now={data.progress} label={`${data.progress}%`} />
                                     </ProgressBar>

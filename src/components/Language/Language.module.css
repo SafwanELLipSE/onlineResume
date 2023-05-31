@@ -2,6 +2,16 @@
     font-size: 2.5rem;
 }
 
+.secondaryHeaderText {
+    font-size: 1.375rem;
+    margin-bottom: 1.25rem;
+}
+
+.thirdText{
+    font-size: 1rem;
+    color: #6c757d;
+}
+
 .blueOutlineBtn{
     width: 5.6rem;
     height: 2.4rem;
@@ -24,6 +34,14 @@
         font-size: 1.85rem;
     }
 
+    .secondaryHeaderText {
+        font-size: 1.25rem;
+    }
+
+    .thirdText{
+        font-size: 0.875rem;
+    }
+
     .blueOutlineBtn{
         width: 5rem;
         height: 2.1rem;
@@ -35,6 +53,14 @@
 @media (max-width: 769px){
     .cardHeaderText{
         font-size: 1.5rem;
+    }
+
+    .secondaryHeaderText {
+        font-size: 1.125rem;
+    }
+
+    .thirdText{
+        font-size: 0.875rem;
     }
 
     .blueOutlineBtn{
@@ -50,6 +76,14 @@
         font-size: 1.7rem;
     }
 
+    .secondaryHeaderText {
+        font-size: 1rem;
+    }
+
+    .thirdText{
+        font-size: 0.875rem;
+    }
+
     .blueOutlineBtn{
         width: 4rem;
         height: 2rem;
@@ -61,6 +95,14 @@
 @media (max-width: 320px) {
     .cardHeaderText{
         font-size: 1.5rem;
+    }
+
+    .secondaryHeaderText {
+        font-size: 1rem;
+    }
+
+    .thirdText{
+        font-size: 0.875rem;
     }
 
     .blueOutlineBtn{

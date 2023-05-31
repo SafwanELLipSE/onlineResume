@@ -100,10 +100,10 @@ const Software = () => {
                 </Card.Header>
                 <Card.Body>
                     <div className="mb-3">
-                        <h3 className="h5 mb-3">{softwareIcon} Software </h3>
+                        <h3 className={`${styles.secondaryHeaderText}`}>{softwareIcon} Software </h3>
                         {softwareList.slice(0, 2).map((data, index) => (
                             <div key={index}>
-                                <h4 className="h6 text-muted">
+                                <h4 className={`${styles.thirdText}`}>
                                     <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/> 
                                     {data.name}
                                 </h4>
@@ -117,7 +117,7 @@ const Software = () => {
                             <div id="collapse-software">
                                 {softwareList.slice(2, 13).map((data, index) => (
                                     <div key={index}>
-                                        <h4 className="h6 text-muted">
+                                        <h4 className={`${styles.thirdText}`}>
                                             <FontAwesomeIcon icon={data.icon} className={`text-muted me-2`}/> 
                                             {data.name}
                                         </h4>
