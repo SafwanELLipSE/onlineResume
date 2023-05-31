@@ -58,14 +58,14 @@ const PersonalStatement = () => {
                     </h1>
                 </Card.Header>
                 <Card.Body>
-                        <p className={`card-text lead personal-card-text-justify lh-sm fs-4`}>
+                        <p className={`${styles.leadParagraph}`}>
                             {data.header}
                         </p>
-                        <p className={`card-text personal-card-text-justify lh-sm fs-5`}>
+                        <p className={`${styles.secondaryParagraph}`}>
                             {data.second}
                         </p>
 
-                        <Carousel className='carouselStyles' slide={false}>
+                        {/* <Carousel className='carouselStyles' slide={false}>
                             {
                                 data.blockquote.map((data, index) => (
                                     <Carousel.Item key={index} className="mb-1">
@@ -76,7 +76,7 @@ const PersonalStatement = () => {
                                     </Carousel.Item>
                                 ))
                             }
-                        </Carousel>
+                        </Carousel> */}
                 </Card.Body>
             </Card>
         </div>

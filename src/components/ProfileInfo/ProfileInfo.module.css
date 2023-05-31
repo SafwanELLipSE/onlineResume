@@ -16,6 +16,7 @@
 .mediaBody {
     -ms-flex: 1;
     flex: 1;
+    font-size: 1.1rem;
 }
 
 .blueOutlineBtn{
@@ -40,6 +41,10 @@
         font-size: 2.2rem;
     }
 
+    .mediaBody {
+        font-size: .9rem;
+    }
+
     .fontAwesomeSize {
         font-size: 2.1rem;
     }
@@ -55,6 +60,10 @@
 @media (max-width: 769px){
     .cardHeaderText{
         font-size: 1.5rem;
+    }
+
+    .mediaBody {
+        font-size: .9rem;
     }
 
     .fontAwesomeSize {
@@ -75,12 +84,16 @@
         font-size: 1.7rem;
     }
 
+    .mediaBody {
+        font-size: 0.875rem;
+    }
+
     .fontAwesomeSize {
         font-size: 2.5rem;
         visibility: visible;
         display: block;
     }  
-    
+
     .blueOutlineBtn{
         width: 4rem;
         height: 2rem;
@@ -92,6 +105,10 @@
 @media (max-width: 320px) {
     .cardHeaderText{
         font-size: 1.5rem;
+    }
+
+    .mediaBody {
+        font-size: 0.875rem;
     }
 
     .fontAwesomeSize {

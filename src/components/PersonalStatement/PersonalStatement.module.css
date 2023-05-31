@@ -2,9 +2,31 @@
     font-size: 2.5rem;
 }
 
+.leadParagraph{
+    font-size: 1.125rem;
+    color: #6c757d;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.secondaryParagraph {
+    font-size: 1.125rem;
+    color: #333;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
 @media (max-width: 1025px){
     .cardHeaderText{
         font-size: 2.2rem;
+    }
+
+    .leadParagraph{
+        font-size: 1rem;
+    }
+    
+    .secondaryParagraph {
+        font-size: 1rem;
     }
 }
 
@@ -12,16 +34,40 @@
     .cardHeaderText{
         font-size: 1.5rem;
     } 
+
+    .leadParagraph{
+        font-size: 1rem;
+    }
+
+    .secondaryParagraph {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 426px) {
     .cardHeaderText{
         font-size: 1.7rem;
     }
+
+    .leadParagraph{
+        font-size: 0.875rem;
+    }
+    
+    .secondaryParagraph {
+        font-size: 0.875rem;
+    }
 }
 
 @media (max-width: 320px) {
     .cardHeaderText{
         font-size: 1.5rem;
+    }
+
+    .leadParagraph{
+        font-size: 0.875rem;
+    }
+    
+    .secondaryParagraph {
+        font-size: 0.875rem;
     }
 }
