@@ -25,6 +25,10 @@ import styles from "./Main.module.css";
 export default function Main() {
     const componentRef = useRef();
 
+    const width = window.innerWidth;
+
+    const breakpoint = 500;
+
     const handlePrint = useReactToPrint({
         content: () => componentRef.current,
         documentTitle: 'K-M-Safwan-Hassan-Resume'
@@ -53,18 +57,26 @@ export default function Main() {
         </div>
     );
 
+    const leftSide = (
+        <Col lg={4} md={4} sm={12}>
+            <LeftSection />
+            {buttonSection}
+        </Col>
+    );
+
+    const rightSide = (
+        <Col lg={8} md={8} sm={12}>
+            <RightSection />
+        </Col>
+    );
+
     return (
         <div>
             <div ref={componentRef} className='container-md mt-4'>
                 <Row className='mt-3'>
-                    <Col lg={4} md={4} sm={12}>
-                        <LeftSection />
-
-                        {buttonSection}
-                    </Col>
-                    <Col lg={8} md={8} sm={12}>
-                        <RightSection />
-                    </Col>
+                    {width > breakpoint ? leftSide : null }
+                    {rightSide}
+                    {width < breakpoint ? leftSide : null }
                 </Row>
             </div>
         </div>
