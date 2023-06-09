@@ -30,10 +30,11 @@
     flex-direction: row;
     width: 42rem;
     height: 24rem;
-    background-color: #000E19;
     position: fixed;
+    background: linear-gradient(#0F2027, #203A43, #2C5364) padding-box, linear-gradient(90deg, #4286f4, #373B44) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
     border-radius: 10px;
-    border: 4px solid #FFF;
     z-index: 1;
 }
 
@@ -49,8 +50,9 @@
     display: block;
     width: 12rem;
     height: 12rem;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #373B44, #4286f4) border-box;
     border-radius: 50%;
-    border: 3px solid #FFF;
+    border: 4px solid transparent;
     margin-bottom: .8rem;
     position: relative;
     overflow: hidden;
@@ -78,8 +80,139 @@
 .position { 
     font-size: 0.875rem;
     color: #FFF;
+    color: #4286f4;
 }
 
 .contentArea {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentBody {
+    text-align: center;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.GreetingName {
+    font-size: 20px;
+    color: #4286f4;
+}
+
+.socialIconArea {
+    width: 7rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.linkedinLink {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background-color: #14539A;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.linkedinLink:hover {
+    background-color: #fff;
+    color: #14539A;
+    animation: pulse-animation 2s infinite;
+}
+
+.linkedinIcon {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.githubLink {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.githubLink:hover {
+    background-color: #fff;
+    color: #333;
+    animation: pulse-animation 2s infinite;
+}
+
+.githubIcon {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(9, 109, 208, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+.buttonArea {
+    width: 14rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: .5rem 0;
+}
+
+.buttonResume {
+    font-size: 16px;
+    width: 5rem;
+    height: 2rem;
+    color: #fff;
+    background: linear-gradient(to right, #1e3c72, #2a5298) padding-box, linear-gradient(to left, #373B44, #4286f4) border-box;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttonResume:hover {
+    background: linear-gradient(to right, #bdc3c7, #2c3e50) padding-box, linear-gradient(to right, #373B44, #4286f4) border-box;
+    color: #fff;
+}
+
+.buttonPortfolio {
+    font-size: 16px;
+    width: 5rem;
+    height: 2rem;
+    color: #fff;
+    background: linear-gradient(to right, #1e3c72, #2a5298) padding-box, linear-gradient(to right, #373B44, #4286f4) border-box;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttonPortfolio:hover {
+    background: linear-gradient(to right, #2c3e50, #bdc3c7) padding-box, linear-gradient(to left, #373B44, #4286f4) border-box;
+    color: #fff;
 }

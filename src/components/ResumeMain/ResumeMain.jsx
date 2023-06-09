@@ -42,7 +42,7 @@ export default function ResumeMain() {
     };
 
     const buttonSection = (
-        <div className={`mt-4 ${styles.groupButtonArea}`}>
+        <div className={`mt-4 mb-3 ${styles.groupButtonArea}`}>
             <Button 
                 variant="outline-primary rounded-pill" 
                 className={`${styles.pulse} me-3`} 
