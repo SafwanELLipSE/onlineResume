@@ -36,7 +36,6 @@ const WorkExperience = () => {
                 "Analyse files and address inconsistencies as soon as possible.", 
                 "Ensure that all agency and student inquiries are handled professionally and expeditiously.",
                 "Implement and maintain systems and processes to guarantee that all databases include correct and thorough information.", 
-                "Checks products in the sandwich unit area and restocks items to ensure a sufficient supply throughout the shift.",
                 "To protect student privacy, ensure that correct releases are on file."                           
             ]
         },

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Main from "./components/Main/Main";
+import InitialLanding from "./components/InitialLanding/InitialLanding";
 
 // styles
 import styles from "./App.module.css"
@@ -8,7 +8,7 @@ import styles from "./App.module.css"
 function App() {
   return (
     <div className={styles.App}>
-      <Main/>
+      <InitialLanding />
     </div>
   );
 }

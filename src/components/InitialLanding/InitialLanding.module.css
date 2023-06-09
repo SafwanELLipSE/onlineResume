@@ -1,0 +1,85 @@
+.mainBackground {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topBackground {
+    display: block;
+    width: 100%;
+    height: 50% !important;
+    background-color: #000E19;
+}
+
+.bottomBackground {
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-image: url(/src/assets/images/lower-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-origin: content-box;
+}
+
+.profileCard {
+    display: flex;
+    flex-direction: row;
+    width: 42rem;
+    height: 24rem;
+    background-color: #000E19;
+    position: fixed;
+    border-radius: 10px;
+    border: 4px solid #FFF;
+    z-index: 1;
+}
+
+.profileImageArea {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageArea {
+    display: block;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    margin-bottom: .8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 128%;
+    height: 196%;
+    position: absolute;
+    z-index: 0;
+}
+
+.nameArea {
+    text-align: center;
+}
+
+.name {
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.position { 
+    font-size: 0.875rem;
+    color: #FFF;
+}
+
+.contentArea {
+    width: 60%;
+}

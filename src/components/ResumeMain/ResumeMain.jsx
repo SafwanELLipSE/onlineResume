@@ -20,9 +20,9 @@ import { useReactToPrint } from 'react-to-print';
 import resume from '../../assets/Resume/K-M-Safwan-Hassan-Resume.docx';
 
 // styles
-import styles from "./Main.module.css";
+import styles from "./ResumeMain.module.css";
 
-export default function Main() {
+export default function ResumeMain() {
     const componentRef = useRef();
 
     const width = window.innerWidth;
