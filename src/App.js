@@ -17,7 +17,7 @@ function App() {
   return (
     <div className={styles.App}>
       <Routes>
-        <Route path="/" element={<InitialLanding />}/>
+        <Route path="/onlineResume" element={<InitialLanding />}/>
         <Route path="/resume" element={<ResumeMain />}/>
         <Route path="/portfolio" element={<PortfolioMain />}/>
       </Routes>

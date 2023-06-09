@@ -67,7 +67,7 @@ const InitialLanding = () => {
                                 wrapper="span"
                                 cursor={true}
                                 repeat={Infinity}
-                                style={{ fontSize: '20px', display: 'inline-block' }}
+                                className={`${styles.textAnimation}`}
                             />
                         </div>
                     </div>
