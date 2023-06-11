@@ -240,13 +240,12 @@
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 601px){
     .profileCard {
         flex-direction: column;
-        width: 20rem;
+        width: 24rem;
         height: 32rem;
     }
-
     .profileImageArea {
         margin-top: 2rem;
         width: auto;
@@ -258,6 +257,23 @@
         width: auto;
     }
 }
+
+@media (max-width: 426px) {
+    .profileCard {
+        width: 20rem;
+        height: 32rem;
+    }
+
+    .profileImageArea {
+        margin-top: 2rem;
+        border-bottom: 2px solid #2c3e50;
+    }
+
+    .contentArea {
+        margin-top: 1rem;
+    }
+}
+
 
 @media (max-width: 320px) {
     .profileCard {
