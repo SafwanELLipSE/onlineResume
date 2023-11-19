@@ -23,20 +23,40 @@ const WorkExperience = () => {
 
     const education = [
         {
-            job: "Admissions Officer (Part-Time)",
+            job: "Admissions Officer",
             company: "Elizabeth School of London",
             location: "Canary Wharf, London, United Kingdom",
             link: "https://elizabethschool.com/",
-            startDate: "01/04/2023",
+            startDate: "01/11/2023",
             endDate: "Present",
             dateTimeStart: "2023-04-01",
             dateTimeEnd: "Present",
             icon: briefCase,
             responsibilities: [
+                "Develop and implement recruitment tactics in collaboration with the admissions staff to ensure the enrollment of a diverse and skilled student group.", 
+                "To make admissions choices, evaluate and process applications, and analyse academic records, test results, and recommendation letters.",
+                "Maintain accurate records in the admissions database of application data, admission decisions, and communication interactions.", 
+                "From applicant intake to decision release, I managed and oversaw the admissions process.",
+                "Admissions software and CRM systems were implemented and updated to expedite the application and decision process."                        
+            ]
+        },
+        {
+            job: "Admissions Officer (Part-Time)",
+            company: "Elizabeth School of London",
+            location: "Canary Wharf, London, United Kingdom",
+            link: "https://elizabethschool.com/",
+            startDate: "01/04/2023",
+            endDate: "31/10/2023",
+            dateTimeStart: "2023-04-01",
+            dateTimeEnd: "2023-10-31",
+            icon: briefCase,
+            responsibilities: [
                 "Analyse files and address inconsistencies as soon as possible.", 
                 "Ensure that all agency and student inquiries are handled professionally and expeditiously.",
                 "Implement and maintain systems and processes to guarantee that all databases include correct and thorough information.", 
-                "To protect student privacy, ensure that correct releases are on file."                           
+                "To protect student privacy, ensure that correct releases are on file.",
+                "Able to submit 70+ applications in the university Portal a day.",
+                "Check and progress on average 30 to 40 files."                          
             ]
         },
         {
