@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/onlineResume/static/css/main.36d00776.css",
-    "main.js": "/onlineResume/static/js/main.d18399bc.js",
+    "main.js": "/onlineResume/static/js/main.d44f9749.js",
     "static/js/787.fec3bd3a.chunk.js": "/onlineResume/static/js/787.fec3bd3a.chunk.js",
     "static/media/lower-background.jpg": "/onlineResume/static/media/lower-background.0172d1898fa4de6dc10c.jpg",
     "static/media/profile-image.jpg": "/onlineResume/static/media/profile-image.0231c6dd033bea952423.jpg",
     "static/media/CV.jpg": "/onlineResume/static/media/CV.08baaf874fc8fcd9e84f.jpg",
     "static/media/under-construction.png": "/onlineResume/static/media/under-construction.68a2174e980fffa4c454.png",
-    "static/media/K-M-Safwan-Hassan-Resume.docx": "/onlineResume/static/media/K-M-Safwan-Hassan-Resume.956ea12e38d73e416354.docx",
+    "static/media/K-M-Safwan-Hassan-Resume.docx": "/onlineResume/static/media/K-M-Safwan-Hassan-Resume.b7134fa63a60d0177d02.docx",
     "index.html": "/onlineResume/index.html",
     "main.36d00776.css.map": "/onlineResume/static/css/main.36d00776.css.map",
-    "main.d18399bc.js.map": "/onlineResume/static/js/main.d18399bc.js.map",
+    "main.d44f9749.js.map": "/onlineResume/static/js/main.d44f9749.js.map",
     "787.fec3bd3a.chunk.js.map": "/onlineResume/static/js/787.fec3bd3a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36d00776.css",
-    "static/js/main.d18399bc.js"
+    "static/js/main.d44f9749.js"
   ]
 }
